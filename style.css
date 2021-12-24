@@ -1,0 +1,773 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.8ms linear;
+}
+/* header section styles */
+header {
+  width: 100%;
+  height: 9vw;
+  background-color: #9a5b6a;
+}
+header #headerlogo {
+  width: 11.5vw;
+  height: 5.7vw;
+  margin: 2vw 0 0 2vw;
+  border-radius: 0px;
+}
+header #sitesearch {
+  position: absolute;
+  width: 30vw;
+  height: 2.3vw;
+  font-size: 1.7vw;
+  line-height: 28px;
+  background-color: #9a5b6a;
+  color: white;
+  margin: 3.5vw 0 0 12.8vw;
+  padding: 0 0 0 0.5vw;
+  font-family: "Gilda Display", serif;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+header .fa-search {
+  position: absolute;
+  font-size: 1.6vw;
+  color: white;
+  margin: 3.8vw 0 0 39.7vw;
+  cursor: pointer;
+}
+header #locationgroup {
+  margin: -5vw 0 0 69vw;
+}
+header #locationgroup .fa-map-marker-alt {
+  position: absolute;
+  font-size: 1.7vw;
+  color: white;
+  cursor: pointer;
+}
+header #locationgroup label {
+  position: absolute;
+  font-size: 1.5vw;
+  color: white;
+  font-family: "Gilda Display", serif;
+  margin: 1.8vw 0 0 -2vw;
+  cursor: pointer;
+}
+header #favoritesgroup {
+  margin: -5vw 0 0 77vw;
+}
+header #favoritesgroup .fa-heart {
+  position: absolute;
+  font-size: 1.7vw;
+  color: white;
+  cursor: pointer;
+}
+header #favoritesgroup label {
+  position: absolute;
+  font-size: 1.5vw;
+  color: white;
+  font-family: "Gilda Display", serif;
+  margin: 1.8vw 0 0 -2vw;
+  cursor: pointer;
+}
+header #shoppinggroup {
+  margin: -5vw 0 0 85vw;
+}
+header #shoppinggroup .fa-shopping-bag {
+  position: absolute;
+  font-size: 1.7vw;
+  color: white;
+  cursor: pointer;
+}
+header #shoppinggroup label {
+  position: absolute;
+  font-size: 1.5vw;
+  color: white;
+  font-family: "Gilda Display", serif;
+  margin: 1.8vw 0 0 -0.8vw;
+  cursor: pointer;
+}
+header #usergroup {
+  margin: -5vw 0 0 93vw;
+}
+header #usergroup .fa-user {
+  position: absolute;
+  font-size: 1.7vw;
+  color: white;
+  cursor: pointer;
+}
+header #usergroup label {
+  position: absolute;
+  font-size: 1.5vw;
+  color: white;
+  font-family: "Gilda Display", serif;
+  margin: 1.8vw 0 0 -3.2vw;
+  cursor: pointer;
+}
+/* nav section styles */
+nav {
+  width: 100%;
+  height: 4vw;
+  background-color: #efe6dd;
+}
+nav ul {
+  margin-left: 6.5vw;
+}
+nav ul li {
+  display: inline-block;
+  font-size: 1.3vw;
+  color: #000000;
+  padding: 1vw 0 0 4vw;
+  font-family: "Gilda Display", serif;
+  cursor: pointer;
+  transition: 0.1ms linear;
+}
+nav ul li:hover {
+  color: #fafafa;
+  transition: 0.1s linear;
+}
+body {
+  background-color: #fafafa;
+}
+/* banner we care section styles */
+#banner {
+  width: 100%;
+  height: 42vw;
+}
+#banner #bannerimg {
+  width: 50vw;
+  height: 34vw;
+}
+#banner #careimg {
+  position: absolute;
+  width: 52vw;
+  height: 7.3vw;
+  margin: 6vw 0 0 -3.5vw;
+}
+#banner pre {
+  position: absolute;
+  font-size: 3.5vw;
+  color: #9a5b6a;
+  font-family: "Gilda Display", serif;
+  margin: -20vw 0 0 55vw;
+}
+#banner pre label {
+  font-size: 3.5vw;
+  font-weight: 600;
+  color: #9a5b6a;
+  font-family: "Gilda Display", serif;
+}
+#banner #shareimg {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  margin: 28vw 0 0 41vw;
+}
+#banner #dots {
+  width: 15vw;
+  height: 4vw;
+  margin: 3vw 0 0 30vw;
+  padding: 1vw 0 0 16vw;
+}
+#banner #dots button {
+  width: 1vw;
+  height: 1vw;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 0.4vw;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 50ms linear;
+}
+#banner #dots button:hover {
+  background-color: #9a5b6a;
+  transition: 50ms linear;
+}
+#banner #dots button:nth-child(2) {
+  background-color: #9a5b6a;
+}
+/* sale section styles */
+#sale {
+  width: 100%;
+  height: 63vw;
+  margin-top: 2vw;
+}
+#sale #salep {
+  width: 24vw;
+  font-size: 1.7vw;
+  font-family: "Gilda Display", serif;
+  border-bottom: 1px solid #9a5b6a;
+  margin: 3vw 0 0 37vw;
+  padding-left: 11vw;
+  box-sizing: border-box;
+}
+/* sale offers/cards section */
+#sale #cardscontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 25.5vw);
+  grid-template-rows: repeat(1, 44vw);
+  grid-column-gap: 2vw;
+  justify-content: center;
+  margin-top: 5vw;
+}
+#sale #cardscontainer .carddivs {
+  background-color: #efe6dd;
+}
+#sale #cardscontainer .carddivs .offers {
+  position: absolute;
+  width: 7.3vw;
+  height: 4.1vw;
+  font-size: 2.6vw;
+  color: white;
+  background-color: #9a5b6a;
+  font-family: "Gilda Display", serif;
+  padding: 0.5vw 0 0 1vw;
+  box-sizing: border-box;
+}
+#sale #cardscontainer .carddivs .fa-heart {
+  position: absolute;
+  font-size: 2.5vw;
+  color: #9a5b6a;
+  margin: 0.5vw 0 0 22vw;
+  cursor: pointer;
+}
+#sale #cardscontainer .carddivs .headerimg {
+  width: 25.5vw;
+}
+#sale #cardscontainer .carddivs .covertext {
+  font-size: 0.9vw;
+  color: black;
+  font-family: "Gilda Display", serif;
+  margin: 1.2vw 0 0 1.2vw;
+}
+#sale #cardscontainer .carddivs #item_colors_list {
+  width: 100%;
+  height: 1.8vw;
+  margin: 1vw 0 0 0.8vw;
+}
+#sale #cardscontainer .carddivs #item_colors_list .colors {
+  display: inline-block;
+  background-color: red;
+  width: 1.8vw;
+  height: 1.8vw;
+  border-radius: 2px;
+  margin-left: 0.3vw;
+  cursor: pointer;
+}
+#sale #cardscontainer .carddivs #item_colors_list .colors:nth-child(5) {
+  border-bottom: 1px solid #000000cc;
+}
+/* card 1 colors */
+#sale #cardscontainer .card1 #item_colors_list .colors:nth-child(1) {
+  background-color: #d5baa7;
+}
+#sale #cardscontainer .card1 #item_colors_list .colors:nth-child(2) {
+  background-color: #eec8a3;
+}
+#sale #cardscontainer .card1 #item_colors_list .colors:nth-child(3) {
+  background-color: #e4b6a6;
+}
+#sale #cardscontainer .card1 #item_colors_list .colors:nth-child(4) {
+  background-color: #e2b7a6;
+}
+#sale #cardscontainer .card1 #item_colors_list .colors:nth-child(5) {
+  background-color: #be6d58;
+}
+#sale #cardscontainer .card1 #item_colors_list .colors:nth-child(6) {
+  background-color: #c8a891;
+}
+#sale #cardscontainer .card1 #item_colors_list .colors:nth-child(7) {
+  background-color: #c19473;
+}
+/* card 2 colors */
+#sale #cardscontainer .card2 #item_colors_list .colors:nth-child(1) {
+  background-color: #d5baa7;
+}
+#sale #cardscontainer .card2 #item_colors_list .colors:nth-child(2) {
+  background-color: #eec8a3;
+}
+#sale #cardscontainer .card2 #item_colors_list .colors:nth-child(3) {
+  background-color: #e4b6a6;
+}
+#sale #cardscontainer .card2 #item_colors_list .colors:nth-child(4) {
+  background-color: #e2b7a6;
+}
+#sale #cardscontainer .card2 #item_colors_list .colors:nth-child(5) {
+  background-color: #f0be9b;
+}
+#sale #cardscontainer .card2 #item_colors_list .colors:nth-child(6) {
+  background-color: #caaa93;
+}
+#sale #cardscontainer .card2 #item_colors_list .colors:nth-child(7) {
+  background-color: #d0b29c;
+}
+/* card 3 colors */
+#sale #cardscontainer .card3 #item_colors_list .colors:nth-child(1) {
+  background-color: #dd605e;
+}
+#sale #cardscontainer .card3 #item_colors_list .colors:nth-child(2) {
+  background-color: #fa8073;
+}
+#sale #cardscontainer .card3 #item_colors_list .colors:nth-child(3) {
+  background-color: #f78a6d;
+}
+#sale #cardscontainer .card3 #item_colors_list .colors:nth-child(4) {
+  background-color: #ea5c52;
+}
+#sale #cardscontainer .card3 #item_colors_list .colors:nth-child(5) {
+  background-color: #bd5749;
+}
+#sale #cardscontainer .card3 #item_colors_list .colors:nth-child(6) {
+  background-color: #fc82a9;
+}
+#sale #cardscontainer .card3 #item_colors_list .colors:nth-child(7) {
+  background-color: #b94456;
+}
+#sale #cardscontainer .carddivs #item_colors_list .fa-plus {
+  font-size: 2.5vw;
+  color: #000000cc;
+  cursor: pointer;
+}
+#sale #cardscontainer .carddivs .under_colors_text {
+  font-size: 1.3vw;
+  color: #000000cc;
+  font-family: "Gilda Display", serif;
+  margin: 1.1vw 0 0 1.1vw;
+}
+#sale #cardscontainer .carddivs .itemprice {
+  font-size: 1.3vw;
+  color: #000000cc;
+  font-family: "Gilda Display", serif;
+  margin: 2.3vw 0 0 1.1vw;
+}
+#sale #cardscontainer .carddivs .itemprice .oldprice {
+  font-size: 1vw;
+  text-decoration: line-through;
+}
+#sale #cardscontainer .carddivs .buyitem {
+  width: 14.6vw;
+  height: 3.6vw;
+  font-size: 1.7vw;
+  color: black;
+  font-family: "Gilda Display", serif;
+  margin: 2.1vw 0 0 5.7vw;
+  border: 1px solid #9a5b6a;
+  cursor: pointer;
+}
+#sale #more {
+  width: 14.6vw;
+  height: 3.6vw;
+  background-color: #9a5b6a;
+  border: none;
+  margin: 5.8vw 0 0 42.3vw;
+  font-size: 1.7vw;
+  color: #ffffff;
+  font-family: "Gilda Display", serif;
+  cursor: pointer;
+}
+/* new product section styles */
+#newproduct {
+  width: 100%;
+  height: 35vw;
+  margin-top: 2vw;
+  background-color: #efe6dd;
+}
+#newproduct #new_product_img1 {
+  width: 28vw;
+  height: 100%;
+}
+#newproduct #new_product_text {
+  width: 39vw;
+  height: 27vw;
+  font-size: 4.4vw;
+  color: #29170acc;
+  font-family: "Gilda Display", serif;
+  margin: -33vw 0 0 16vw;
+}
+#newproduct #try_free {
+  width: 14.6vw;
+  height: 3.6vw;
+  background-color: #efe6dd;
+  border: 1px solid #26180f;
+  font-size: 1.7vw;
+  color: #26180f;
+  font-family: "Gilda Display", serif;
+  margin: 0 0 0 42vw;
+  cursor: pointer;
+  box-shadow: 0 0 10px #26180f;
+  text-shadow: 0 5px 4px #26180f;
+}
+#newproduct #new_product_img2 {
+  width: 40vw;
+  height: 100%;
+  margin: -32.9vw 0 0 58.7vw;
+}
+/* gifts section styles */
+#gifts_section {
+  width: 87.8vw;
+  height: 32vw;
+  margin: 5.8vw 0 0 5.7vw;
+}
+#gifts_section #gifts_heading {
+  width: 25.5vw;
+  font-size: 1.7vw;
+  color: #000000;
+  font-family: "Gilda Display", serif;
+  border-bottom: 1px solid #9a5b6a;
+  margin: 0 0 0 31vw;
+  padding: 0 0 0 2vw;
+  box-sizing: border-box;
+}
+#gifts_section #gifts_container {
+  display: grid;
+  grid-template-columns: repeat(2, 43.1vw);
+  grid-template-rows: repeat(1, 23.4vw);
+  grid-column-gap: 2vw;
+  margin-top: 5.8vw;
+  justify-content: center;
+  align-content: center;
+}
+#gifts_section #gifts_container .gifts_blocks {
+  background-color: #efe6dd;
+  box-shadow: 0 5px 5px #e6ded7;
+}
+#gifts_section #gifts_container .gifts_block1 #BeautyBoximg {
+  display: inline-block;
+  width: 20.4vw;
+  height: 23.3vw;
+}
+#gifts_section #gifts_container .gifts_block1 #BeautyBoxcover {
+  position: absolute;
+  display: inline-block;
+  width: 20.4vw;
+  height: 19.3vw;
+  background-color: #ffffff;
+  margin: 2vw 0 0 1vw;
+}
+#gifts_section
+  #gifts_container
+  .gifts_block1
+  #BeautyBoxcover
+  #BeautyBoxcover_heading {
+  font-size: 1.7vw;
+  color: #000000;
+  font-family: "Gilda Display", serif;
+  margin: 2.5vw 0 0 -7.5vw;
+}
+#gifts_section #gifts_container .gifts_block1 #BeautyBoxcover #text1 {
+  font-size: 1.3vw;
+  color: #000000;
+  font-family: "Gilda Display", serif;
+  margin: -1vw 0 0 1vw;
+}
+#gifts_section #gifts_container .gifts_block1 #BeautyBoxcover #text2 {
+  font-size: 1.9vw;
+  color: #9a5b6a;
+  font-family: "Gilda Display", serif;
+  margin: 1vw 0 0 1vw;
+}
+#gifts_section #gifts_container .gifts_blocks .order {
+  width: 5.8vw;
+  height: 1.7vw;
+  background-color: #9a5b6a;
+  border: none;
+  font-size: 1.1vw;
+  color: #ffffff;
+  font-family: "Gilda Display", serif;
+  margin: 3.5vw 0 0 12.5vw;
+  cursor: pointer;
+}
+#gifts_section #gifts_container .gifts_block2 {
+  background-image: url(./logo&images/maskgroupback.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#gifts_section #gifts_container #card_container {
+  width: 23.4vw;
+  height: 21vw;
+  margin: 1vw 0 0 10vw;
+}
+#gifts_section #gifts_container #card_container #gift_card {
+  width: 23.4vw;
+  height: 13.6vw;
+  cursor: pointer;
+}
+#gifts_section #gifts_container #card_container #gift_card_text {
+  font-size: 1.7vw;
+  color: #000000;
+  font-family: "Gilda Display", serif;
+  margin-top: 0.5vw;
+}
+#gifts_section #gifts_container #card_container .order {
+  margin: 1vw 0 0 8.7vw;
+}
+/* beauty section styles */
+#beauty_section {
+  width: 100%;
+  height: 45vw;
+  margin-top: 5.9vw;
+}
+#beauty_section #beauty_heading {
+  width: 25.5vw;
+  font-size: 1.7vw;
+  color: #000000;
+  font-family: "Gilda Display", serif;
+  border-bottom: 1px solid #9a5b6a;
+  margin: 0 0 0 37vw;
+  padding: 0 0 0 4vw;
+  box-sizing: border-box;
+}
+#beauty_section #beauty_container {
+  width: 100%;
+  height: 36.6vw;
+}
+#beauty_section #beauty_container #beauty_container_background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #efe6dd;
+  filter: blur(150px);
+}
+#beauty_section #beauty_container #free_product {
+  position: absolute;
+  width: 26.2vw;
+  height: 16.2vw;
+  margin: 16vw 0 0 8.8vw;
+}
+#beauty_section #beauty_container #free_product #free_product_text1 {
+  width: 100%;
+  font-size: 2.6vw;
+  color: #000000;
+  background-color: #fafafa;
+  font-family: "Gilda Display", serif;
+}
+#beauty_section #beauty_container #free_product #free_product_text2 {
+  width: 100%;
+  font-size: 1.8vw;
+  color: #000000;
+  font-family: "Gilda Display", serif;
+  margin-top: 1.7vw;
+}
+#beauty_section #beauty_container #free_product #free_product_button {
+  width: 13.7vw;
+  height: 3.6vw;
+  background-color: #9a5b6a;
+  border: none;
+  font-size: 1.6vw;
+  color: #ffffff;
+  font-family: "Gilda Display", serif;
+  margin: 3.5vw 0 0 0;
+  cursor: pointer;
+}
+#beauty_section #beauty_container .item_info {
+  position: absolute;
+  width: 23.4vw;
+  height: 24.6vw;
+  margin: 11.7vw 0 0 45.3vw;
+}
+#beauty_section #beauty_container .info2 {
+  margin: 11.7vw 0 0 71vw;
+}
+#beauty_section #beauty_container .item_info img {
+  width: 100%;
+  height: 21.9vw;
+}
+#beauty_section #beauty_container .item_info p {
+  margin: 1.1vw 0 0 5vw;
+  font-size: 1.3vw;
+  color: #000000;
+  font-family: "Gilda Display", serif;
+}
+/* new product section styles */
+#new_product {
+  width: 100%;
+  height: 36.6vw;
+  margin-top: 5vw;
+  background-color: #dacec2;
+}
+#new_product #new_product_banner {
+  position: absolute;
+  width: 36.2vw;
+  height: 27vw;
+  margin: 3.3vw 0 0 8.7vw;
+}
+#new_product #new_product_banner #banner_text_1 {
+  font-size: 6.2vw;
+  color: #26180f;
+  font-family: "Gilda Display", serif;
+}
+#new_product #new_product_banner #banner_text_1 label {
+  font-size: 10.5vw;
+}
+#new_product #new_product_banner #banner_text_2 {
+  font-size: 1.7vw;
+  color: #29170acc;
+  font-family: "Gilda Display", serif;
+  margin-left: -5vw;
+}
+#new_product #new_product_banner #banner_text_2 label {
+  font-size: 2.6vw;
+}
+#new_product img {
+  position: absolute;
+  width: 48.7vw;
+  height: 36.6vw;
+  margin-left: 50vw;
+}
+/* product in use section styles */
+#product_use_section {
+  width: 100%;
+  height: 58.9vw;
+  margin-top: 10.3vw;
+}
+#product_use_section #product_heading {
+  width: 25.5vw;
+  font-size: 1.7vw;
+  color: #000000;
+  font-family: "Gilda Display", serif;
+  border-bottom: 1px solid #9a5b6a;
+  margin: 0 0 0 37vw;
+  padding: 0 0 0 4.7vw;
+  box-sizing: border-box;
+}
+#product_use_section #product_img1 {
+  display: inline-block;
+  width: 31.6vw;
+  height: 50.4vw;
+  margin-top: 5.8vw;
+}
+#product_use_section #product_img2 {
+  display: inline-block;
+  position: absolute;
+  width: 31.6vw;
+  height: 39.4vw;
+  margin: 11vw 0 0 1.5vw;
+}
+#product_use_section #product_img3 {
+  display: inline-block;
+  width: 31.6vw;
+  height: 50.4vw;
+  margin: 5.8vw 0 0 35vw;
+}
+/* chat style*/ 
+#chat {
+  width: 7.3vw;
+  height: 7.3vw;
+  background-color: #9A5B6A;
+  border-radius: 50%;
+  margin: 4vw 0 0 89vw;
+  box-shadow: 5px 5px 5px rgba(26, 25, 25, 0.788);
+}
+#chat .fa-comment {
+  font-size: 4vw;
+  color: #FFFFFF;
+  margin: 1.8vw 0 0 1.8vw;
+  cursor: pointer;
+  transition: 0.1s linear;
+}
+#chat .fa-comment:hover {
+  color: 	#25d366;
+  transition: 0.1s linear;
+}
+/* footer section styles*/
+footer {
+  width: 100%;
+  height: 33.1vw;
+  background-color: #9A5B6A;
+  margin-top: 19vw;
+}
+footer ul {
+  display: inline-block;
+  margin: 4.8vw 0 0 4.6vw;
+  box-sizing: border-box;
+  list-style: none;
+}
+footer #discover {
+  position: absolute;
+  margin: 4.5vw 0 0 10.5vw;
+}
+footer #services {
+  position: absolute;
+  margin: 4.5vw 0 0 29.5vw;
+}
+footer ul .information:nth-child(1) {
+  font-size: 1.7vw;
+  padding-top: 0;
+  pointer-events: none;
+}
+footer ul .information {
+  font-size: 1.4vw;
+  color: #FFFFFF;
+  font-family: 'Archivo', sans-serif;
+  padding-top: 1.1vw;
+  font-weight: 500;
+  transition: 0.1s linear;
+  cursor: pointer;
+}
+footer ul .information:hover {
+  color: silver;
+  transition: 0.1s linear;
+}
+footer #line_1 {
+  position: absolute;
+  display: inline-block;
+  width: 2px;
+  height: 19.6vw;
+  background-color: #FFFFFF80;
+  margin: 2.3vw 0 0 6vw;
+}
+footer #line_2 {
+  position: absolute;
+  display: inline-block;
+  width: 2px;
+  height: 19.6vw;
+  background-color: #FFFFFF80;
+  margin: 2.3vw 0 0 25vw;
+}
+footer #social_network {
+  margin: -9vw 0 0 63vw;
+}
+footer #social_network i{
+  display: inline-block;
+  font-size: 2.5vw;
+  color: #FFFFFF;
+  padding-left: 4vw;
+  transition: 0.1s linear;
+}
+footer #social_network i:nth-child(1):hover{
+  color:#c13584;
+  transition: 0.1s linear;
+}
+footer #social_network i:nth-child(2):hover{
+  color:#4267B2;
+  transition: 0.1s linear;
+}
+footer #social_network i:nth-child(3):hover{
+  color:#0088cc;
+  transition: 0.1s linear;
+}
+footer #social_network i:nth-child(4):hover{
+  color: #FE2C55;
+  transition: 0.1s linear;
+}
+footer #social_network i:nth-child(5):hover{
+  color: #E60023;
+  transition: 0.1s linear;
+}
+footer #line_3 {
+  width: 100%;
+  height: 2px;
+  background-color: #FFFFFF;
+  margin-top: 20vw;
+}
+footer #copyright {
+  font-size: 1.7vw;
+  color: #ffffff;
+  font-family: 'Archivo', sans-serif;
+  margin: 3vw 0 0 32vw;
+}
+::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
