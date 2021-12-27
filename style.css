@@ -105,6 +105,9 @@ header #usergroup label {
   margin: 1.8vw 0 0 -3.2vw;
   cursor: pointer;
 }
+header .fa-bars {
+  display: none;
+}
 /* nav section styles */
 nav {
   width: 100%;
@@ -205,9 +208,10 @@ body {
 }
 /* sale offers/cards section */
 #sale #cardscontainer {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 25.5vw);
-  grid-template-rows: repeat(1, 44vw);
+  grid-template-rows: repeat(1, 45vw);
   grid-column-gap: 2vw;
   justify-content: center;
   margin-top: 5vw;
@@ -361,7 +365,7 @@ body {
   height: 3.6vw;
   background-color: #9a5b6a;
   border: none;
-  margin: 5.8vw 0 0 42.3vw;
+  margin: 4vw 0 0 42.3vw;
   font-size: 1.7vw;
   color: #ffffff;
   font-family: "Gilda Display", serif;
@@ -400,9 +404,10 @@ body {
   text-shadow: 0 5px 4px #26180f;
 }
 #newproduct #new_product_img2 {
-  width: 40vw;
-  height: 100%;
-  margin: -32.9vw 0 0 58.7vw;
+  position: absolute;
+  width: 39vw;
+  height: 35vw;
+  margin: -29.3vw 0 0 3vw;
 }
 /* gifts section styles */
 #gifts_section {
@@ -526,9 +531,9 @@ body {
 #beauty_section #beauty_container #beauty_container_background {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 65%;
   background: #efe6dd;
-  filter: blur(150px);
+  filter: blur(11vmax);
 }
 #beauty_section #beauty_container #free_product {
   position: absolute;
@@ -651,31 +656,31 @@ body {
   height: 50.4vw;
   margin: 5.8vw 0 0 35vw;
 }
-/* chat style*/ 
+/* chat style*/
 #chat {
   width: 7.3vw;
   height: 7.3vw;
-  background-color: #9A5B6A;
+  background-color: #9a5b6a;
   border-radius: 50%;
   margin: 4vw 0 0 89vw;
   box-shadow: 5px 5px 5px rgba(26, 25, 25, 0.788);
 }
 #chat .fa-comment {
   font-size: 4vw;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 1.8vw 0 0 1.8vw;
   cursor: pointer;
   transition: 0.1s linear;
 }
 #chat .fa-comment:hover {
-  color: 	#25d366;
+  color: #25d366;
   transition: 0.1s linear;
 }
 /* footer section styles*/
 footer {
   width: 100%;
   height: 33.1vw;
-  background-color: #9A5B6A;
+  background-color: #9a5b6a;
   margin-top: 8vw;
 }
 footer ul {
@@ -699,8 +704,8 @@ footer ul .information:nth-child(1) {
 }
 footer ul .information {
   font-size: 1.4vw;
-  color: #FFFFFF;
-  font-family: 'Archivo', sans-serif;
+  color: #ffffff;
+  font-family: "Archivo", sans-serif;
   padding-top: 1.1vw;
   font-weight: 500;
   transition: 0.1s linear;
@@ -715,7 +720,7 @@ footer #line_1 {
   display: inline-block;
   width: 2px;
   height: 19.6vw;
-  background-color: #FFFFFF80;
+  background-color: #ffffff80;
   margin: 2.3vw 0 0 6vw;
 }
 footer #line_2 {
@@ -723,51 +728,410 @@ footer #line_2 {
   display: inline-block;
   width: 2px;
   height: 19.6vw;
-  background-color: #FFFFFF80;
+  background-color: #ffffff80;
   margin: 2.3vw 0 0 25vw;
 }
 footer #social_network {
   margin: -9vw 0 0 63vw;
 }
-footer #social_network i{
+footer #social_network i {
   display: inline-block;
   font-size: 2.5vw;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-left: 4vw;
   transition: 0.1s linear;
   cursor: pointer;
 }
-footer #social_network i:nth-child(1):hover{
-  color:#c13584;
+footer #social_network i:nth-child(1):hover {
+  color: #c13584;
   transition: 0.1s linear;
 }
-footer #social_network i:nth-child(2):hover{
-  color:#4267B2;
+footer #social_network i:nth-child(2):hover {
+  color: #4267b2;
   transition: 0.1s linear;
 }
-footer #social_network i:nth-child(3):hover{
-  color:#0088cc;
+footer #social_network i:nth-child(3):hover {
+  color: #0088cc;
   transition: 0.1s linear;
 }
-footer #social_network i:nth-child(4):hover{
-  color: #FE2C55;
+footer #social_network i:nth-child(4):hover {
+  color: #fe2c55;
   transition: 0.1s linear;
 }
-footer #social_network i:nth-child(5):hover{
-  color: #E60023;
+footer #social_network i:nth-child(5):hover {
+  color: #e60023;
   transition: 0.1s linear;
 }
 footer #line_3 {
   width: 100%;
   height: 2px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin-top: 20vw;
 }
 footer #copyright {
   font-size: 1.7vw;
   color: #ffffff;
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   margin: 3vw 0 0 32vw;
+}
+/* small devices size */
+@media only screen and (max-width: 600px) {
+  #sale #cardscontainer .carddivs .covertext {
+    font-size: 1.2vw;
+  }
+  #sale #cardscontainer .carddivs .under_colors_text {
+    font-size: 1.5vw;
+  }
+  #sale #cardscontainer .carddivs .itemprice {
+    font-size: 1.8vw;
+    margin: 1vw 0 0 1.1vw;
+  }
+
+  #sale #cardscontainer .carddivs .buyitem {
+    font-size: 2vw;
+    margin: 0.5vw 0 0 5.7vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  nav {
+    height: 6vw;
+  }
+  nav ul {
+    margin: 0 0 0 0;
+  }
+  nav ul li {
+    font-size: 1.8vw;
+    padding-left: 3vw;
+    margin-top: 1vw;
+  }
+  header #sitesearch {
+    font-size: 2vw;
+    margin: 3.5vw 0 0 8vw;
+  }
+  header .fa-search {
+    margin: 3.8vw 0 0 36vw;
+  }
+  header #locationgroup {
+    margin: -6vw 0 0 61vw;
+  }
+  header #locationgroup .fa-map-marker-alt {
+    font-size: 2vw;
+  }
+  header #locationgroup label {
+    font-size: 1.8vw;
+    margin: 1.8vw 0 0 -2.5vw;
+  }
+  header #favoritesgroup {
+    margin: -6vw 0 0 70vw;
+  }
+  header #favoritesgroup .fa-heart {
+    font-size: 2vw;
+  }
+  header #favoritesgroup label {
+    font-size: 1.8vw;
+    margin: 1.8vw 0 0 -2.5vw;
+  }
+  header #shoppinggroup {
+    margin: -6vw 0 0 78vw;
+  }
+  header #shoppinggroup .fa-shopping-bag {
+    font-size: 2vw;
+  }
+  header #shoppinggroup label {
+    font-size: 1.8vw;
+    margin: 1.8vw 0 0 -0.8vw;
+  }
+  header #usergroup {
+    margin: -6vw 0 0 86vw;
+  }
+  header #usergroup .fa-user {
+    font-size: 2vw;
+  }
+  header #usergroup label {
+    font-size: 1.8vw;
+    margin: 1.8vw 0 0 -3.2vw;
+  }
+  #sale #salep {
+    width: 24vw;
+    font-size: 2.5vw;
+    margin: 3vw 0px 0px 38vw;
+    padding-left: 10vw;
+  }
+  #gifts_section #gifts_heading {
+    width: 35vw;
+    font-size: 2.5vw;
+    margin: 0 0 0 26vw;
+    padding: 0 0 0 2vw;
+  }
+  #beauty_section #beauty_heading {
+    width: 30vw;
+    font-size: 2.5vw;
+    margin: 0 0 0 35vw;
+    padding: 0 0 0 2vw;
+  }
+  #product_use_section #product_heading {
+    width: 27vw;
+    font-size: 2.5vw;
+    margin: 0 0 0 37vw;
+    padding: 0 0 0 2vw;
+  }
+  #sale #cardscontainer {
+    grid-template-rows: repeat(1, 50vw);
+    grid-row-gap: 2vw;
+    padding-left: 3.5vw;
+    box-sizing: content-box;
+  }
+  #sale #cardscontainer .card1 {
+    width: 36vw;
+  }
+  #sale #cardscontainer .card2 {
+    width: 36vw;
+    margin-left: 11vw;
+  }
+  #sale #cardscontainer .card3 {
+    width: 74.5vw;
+    height: 58vw;
+    grid-row-start: 2;
+  }
+  #sale #cardscontainer .carddivs .headerimg {
+    width: 36vw;
+    height: 26vw;
+  }
+  #sale #cardscontainer .card3 .headerimg {
+    width: 74.5vw;
+    height: 35vw;
+  }
+  #sale #cardscontainer .carddivs .offers {
+    width: 9.3vw;
+    height: 6.1vw;
+    font-size: 3.6vw;
+}
+  #sale #cardscontainer .carddivs .covertext {
+    font-size: 1.7vw;
+  }
+  #sale #cardscontainer .carddivs #item_colors_list .colors {
+    width: 3vw;
+    height: 3vw;
+    margin-left: 0.3vw
+  }
+  #sale #cardscontainer .carddivs #item_colors_list .fa-plus {
+    font-size: 4vw;
+  }
+  #sale #cardscontainer .carddivs .under_colors_text {
+    font-size: 2vw;
+    margin-top: 3vw;
+  }
+  #sale #cardscontainer .carddivs .itemprice {
+    font-size: 2.5vw;
+  }
+  #sale #cardscontainer .carddivs .buyitem {
+    font-size: 2vw;
+    margin: 1vw 0 0 10vw;
+  }
+  #sale #cardscontainer .card3 .buyitem {
+    margin: 0 0 0 29vw;
+  }
+  #sale #more {
+    margin: 1vw 0 0 42.3vw;
+  }
+  #newproduct {
+    margin-top: 61vw;
+  }
+  #newproduct #new_product_img2 {
+    margin: -30vw 0 0 3vw;
+  }
+  #newproduct #try_free {
+    font-size: 2.5vw;
+  }
+  footer {
+    height: 38vw;
+  }
+  footer ul .information:nth-child(1) {
+    font-size: 2.3vw;
+  }
+  footer ul .information {
+    font-size: 2vw;
+  }
+  footer #social_network {
+    margin: -9vw 0 0 60vw;
+  }
+  footer #social_network i {
+    font-size: 3vw;
+  }
+  footer #copyright {
+    font-size: 2.5vw;
+    color: #ffffff;
+    font-family: "Archivo", sans-serif;
+    margin: 3vw 0 0 25vw;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  nav {
+    display: none;
+  }
+  header {
+    height: 25vw;
+  }
+  header #headerlogo {
+    width: 25vw;
+    height: 10vw;
+  }
+  header #sitesearch {
+    display: flex;
+    width: 40vw;
+    height: 5vw;
+    font-size: 4vw;
+    margin: 4vw 0 0 3vw;
+  }
+  header .fa-search {
+    font-size: 3vw;
+    margin: 18vw 0 0 11vw;
+  }
+  header #locationgroup {
+    display: none;
+  }
+  header #favoritesgroup {
+    display: none;
+  }
+  header #shoppinggroup {
+    display: none;
+  }
+  header #usergroup {
+    display: none;
+  }
+  header .fa-bars {
+    display: block;
+    position: absolute;
+    font-size: 10vw;
+    margin: -10vw 0 0 85vw;
+    color: white;
+    cursor: pointer;
+  } 
+  /* gifts */
+  #gifts_section #gifts_heading {
+    width: 35vw;
+    font-size: 2.5vw;
+    margin: 0 0 0 26vw;
+    padding: 0 0 0 2vw;
+  }
+  #beauty_section #beauty_heading {
+    width: 30vw;
+    font-size: 2.5vw;
+    margin: 0 0 0 35vw;
+    padding: 0 0 0 2vw;
+  }
+  /* use */
+  #product_use_section #product_heading {
+    width: 27vw;
+    font-size: 2.5vw;
+    margin: 0 0 0 37vw;
+    padding: 0 0 0 2vw;
+  }
+  /* sale */
+  #sale #salep {
+    width: 24vw;
+    font-size: 2.5vw;
+    margin: 3vw 0px 0px 38vw;
+    padding-left: 10vw;
+  }
+  #sale #cardscontainer {
+    grid-template-rows: repeat(1, 52vw);
+    grid-row-gap: 2vw;
+    padding-left: 3.5vw;
+    box-sizing: content-box;
+  }
+  #sale #cardscontainer .card1 {
+    width: 36vw;
+  }
+  #sale #cardscontainer .card2 {
+    width: 36vw;
+    margin-left: 11vw;
+  }
+  #sale #cardscontainer .card3 {
+    width: 74.5vw;
+    height: 60vw;
+    grid-row-start: 2;
+  }
+  #sale #cardscontainer .carddivs .headerimg {
+    width: 36vw;
+    height: 26vw;
+  }
+  #sale #cardscontainer .card3 .headerimg {
+    width: 74.5vw;
+    height: 35vw;
+  }
+  #sale #cardscontainer .carddivs .offers {
+    width: 9.3vw;
+    height: 6.1vw;
+    font-size: 3.6vw;
+}
+  #sale #cardscontainer .carddivs .covertext {
+    font-size: 1.7vw;
+  }
+  #sale #cardscontainer .carddivs #item_colors_list .colors {
+    width: 3vw;
+    height: 3vw;
+    margin-left: 0.3vw
+  }
+  #sale #cardscontainer .carddivs #item_colors_list .fa-plus {
+    font-size: 4vw;
+  }
+  #sale #cardscontainer .carddivs .under_colors_text {
+    font-size: 2vw;
+    margin-top: 3vw;
+  }
+  #sale #cardscontainer .carddivs .itemprice {
+    font-size: 2.5vw;
+  }
+  #sale #cardscontainer .carddivs .buyitem {
+    font-size: 2vw;
+    margin: 1vw 0 0 10vw;
+  }
+  #sale #cardscontainer .card3 .buyitem {
+    margin: 0 0 0 29vw;
+  }
+  #sale #more {
+    margin: 1vw 0 0 42.3vw;
+  }
+  /* newproduct */
+  #newproduct {
+    margin-top: 66vw;
+  }
+  #newproduct #new_product_img2 {
+    display: flex;
+    margin: -33.7vw 0 0 60vw;
+  }
+  #newproduct #try_free {
+    display: flex;
+    font-size: 3vw;
+    padding: 0 0 0 2vw;
+  }
+  #beauty_section #beauty_container #beauty_container_background {
+    height: 30%;
+  }
+  /* footer */
+  footer {
+    height: 38vw;
+  }
+  footer ul .information:nth-child(1) {
+    font-size: 2.3vw;
+  }
+  footer ul .information {
+    font-size: 2vw;
+  }
+  footer #social_network {
+    margin: -9vw 0 0 60vw;
+  }
+  footer #social_network i {
+    font-size: 3vw;
+  }
+  footer #copyright {
+    font-size: 2.5vw;
+    color: #ffffff;
+    font-family: "Archivo", sans-serif;
+    margin: 3vw 0 0 25vw;
+  }
 }
 ::placeholder {
   color: rgba(255, 255, 255, 0.8);
