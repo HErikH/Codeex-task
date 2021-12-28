@@ -876,17 +876,9 @@ footer #copyright {
     padding: 0 0 0 2vw;
   }
   #sale #cardscontainer {
-    grid-template-rows: repeat(1, 50vw);
+    grid-template-columns: 36vw 36vw;
+    grid-template-rows: 50vw 58vw;
     grid-row-gap: 2vw;
-    padding-left: 3.5vw;
-    box-sizing: content-box;
-  }
-  #sale #cardscontainer .card1 {
-    width: 36vw;
-  }
-  #sale #cardscontainer .card2 {
-    width: 36vw;
-    margin-left: 11vw;
   }
   #sale #cardscontainer .card3 {
     width: 74.5vw;
@@ -1037,17 +1029,9 @@ footer #copyright {
     padding-left: 10vw;
   }
   #sale #cardscontainer {
-    grid-template-rows: repeat(1, 52vw);
+    grid-template-columns: 36vw 36vw;
+    grid-template-rows: 51vw 60vw;
     grid-row-gap: 2vw;
-    padding-left: 3.5vw;
-    box-sizing: content-box;
-  }
-  #sale #cardscontainer .card1 {
-    width: 36vw;
-  }
-  #sale #cardscontainer .card2 {
-    width: 36vw;
-    margin-left: 11vw;
   }
   #sale #cardscontainer .card3 {
     width: 74.5vw;
@@ -1093,7 +1077,7 @@ footer #copyright {
     margin: 0 0 0 29vw;
   }
   #sale #more {
-    margin: 1vw 0 0 42.3vw;
+    margin: 2vw 0 0 42.3vw;
   }
   /* newproduct */
   #newproduct {
